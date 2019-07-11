@@ -17,6 +17,14 @@ CAN_LAM = {'init': 'epsg:3347'} ## convert to Canada Lambert Projection (https:/
 
 
 class dataPreProcessing:
+    """
+    group of functions for the data preprocessing phase
+
+    Parameters
+    ----------
+    filename : string
+        path to file containing the MTL-Trajet data
+    """
     def __init__(self, filename):
         self.filename = filename
 
@@ -28,7 +36,12 @@ class dataPreProcessing:
         return data
 
     def read_file(self):
-        # read in file from http://donnees.ville.montreal.qc.ca/dataset/mtl-trajet
+        """
+        reads in the file containing MTL-Trajet data from http://donnees.ville.montreal.qc.ca/dataset/mtl-trajet
+        :return:
+            self : dataPreProcessing Object containing .data which is a geopandas.GeoDataFrame
+        """
+
         try:
             self.data = gpd.read_file(self.filename, encoding='utf-8')  # utf-8 needed to read french letters
         except:
@@ -37,6 +50,16 @@ class dataPreProcessing:
 
     @staticmethod
     def mode_to_new_name(mode_names):
+        """
+        translates a string, potentially containing a list, into english using the global translation dictionaries
+        found at the head of the file
+
+        :param:
+            mode_names : string
+            transport mode names
+        :return:
+            mode_names : string
+        """
         if mode_names:
             mode_list = mode_names.split(',')
             translations = []
@@ -47,7 +70,9 @@ class dataPreProcessing:
             return mode_names
 
     def make_translations(self):
-        # make translations
+        """
+        translates the columns and fields of the data from French to English
+        """
         if 'ND' in self.data['purpose'].unique():
             self.data['purpose'] = self.data['purpose'].apply(lambda pur: purpose_translations[pur] if pur else pur)
         if 'ND' in self.data['mode'].unique():
@@ -55,6 +80,9 @@ class dataPreProcessing:
         return self
 
     def change_projection(self):
+        """
+        Changes the projection of the data to EPSG:3347
+        """
         # convert to Canada Lambert Projection (https://epsg.io/3347)
         if self.data.crs != CAN_LAM:
             print("translating data")
@@ -64,11 +92,17 @@ class dataPreProcessing:
         return self
 
     def calc_journeytime(self):
+        """
+        Calculate the time of each journey in the data
+        """
         self.data['journeytime'] = pd.to_datetime(self.data['endtime']) - pd.to_datetime(self.data['starttime'])
         self.data['journeytime'] = self.data['journeytime'].apply(lambda tm: tm.seconds)
         return self
 
     def calc_distance(self):
+        """
+        Calculate the distance of each journey in the data
+        """
         if self.data.crs != CAN_LAM:
             print("please convert the projection using '.change_projection' first")
         else:

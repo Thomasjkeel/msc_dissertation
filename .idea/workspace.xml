@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67144f55-8de5-43eb-bd02-571664371426" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MSc_Dissertation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MSc_Dissertation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/write_up/msc_disseration_methodology.docx" beforeDir="false" afterPath="$PROJECT_DIR$/write_up/msc_disseration_methodology.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/write_up/msc_dissertation_plan.docx" beforeDir="false" afterPath="$PROJECT_DIR$/write_up/msc_dissertation_plan.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/write_up/msc_intro_abstract.docx" beforeDir="false" afterPath="$PROJECT_DIR$/write_up/msc_intro_abstract.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/write_up/msc_literature_review.docx" beforeDir="false" afterPath="$PROJECT_DIR$/write_up/msc_literature_review.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msc_dissertation_notebooks/analysis/data_analytics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../msc_dissertation_notebooks/analysis/data_analytics.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msc_dissertation_notebooks/analysis/directionality.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../msc_dissertation_notebooks/analysis/directionality.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msc_dissertation_notebooks/analysis/space_time_dynamics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../msc_dissertation_notebooks/analysis/space_time_dynamics.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msc_dissertation_notebooks/pre_processing/create_metrics_and_merge.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../msc_dissertation_notebooks/pre_processing/create_metrics_and_merge.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msc_dissertation_notebooks/pre_processing/investigate_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../msc_dissertation_notebooks/pre_processing/investigate_data.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msc_dissertation_notebooks/shapes/mtl_all_regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/../msc_dissertation_notebooks/shapes/mtl_all_regions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msc_dissertation_notebooks/utils/temporal_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../msc_dissertation_notebooks/utils/temporal_functions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,25 +25,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pre_processing/preprocessing.py">
+        <entry file="file://$PROJECT_DIR$/../msc_dissertation_notebooks/utils/spatial_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="237">
+              <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../msc_dissertation_notebooks/utils/temporal_functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-192">
+              <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
               <folding>
-                <element signature="e#21#31#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/direction_functions.py">
+        <entry file="file://$PROJECT_DIR$/../msc_dissertation_notebooks/utils/analysis_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -50,7 +64,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../msc_dissertation_notebooks" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,24 +73,18 @@
         <option value="$PROJECT_DIR$/pre_processing/translate.py" />
         <option value="$PROJECT_DIR$/utils/direction_functions.py" />
         <option value="$PROJECT_DIR$/pre_processing/preprocessing.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/MSc_Dissertation.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/../msc_dissertation_notebooks/utils/analysis_functions.py" />
+        <option value="$PROJECT_DIR$/../msc_dissertation_notebooks/utils/temporal_functions.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/../msc_dissertation_notebooks/utils/spatial_functions.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="646" />
-    <option name="width" value="634" />
+    <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -87,16 +95,11 @@
           <expand>
             <path>
               <item name="MSc_Dissertation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSc_Dissertation" type="462c0819:PsiDirectoryNode" />
+              <item name="msc_dissertation_notebooks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MSc_Dissertation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSc_Dissertation" type="462c0819:PsiDirectoryNode" />
-              <item name="pre_processing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSc_Dissertation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSc_Dissertation" type="462c0819:PsiDirectoryNode" />
+              <item name="msc_dissertation_notebooks" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -144,6 +147,30 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="MSc_Dissertation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -157,16 +184,17 @@
       <workItem from="1562680464061" duration="5023000" />
       <workItem from="1563104708468" duration="995000" />
       <workItem from="1563548399267" duration="671000" />
+      <workItem from="1563711172874" duration="2977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6689000" />
+    <option name="totallyTimeSpent" value="9666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22940226" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23263328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -180,8 +208,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3178082" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3178082" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32876712" />
+      <window_info anchor="right" x="0" y="0" width="270" height="600" id="Documentation" side_tool="true" weight="0.32956383" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -194,6 +223,16 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/analysis/preprocessing.py" />
+    <entry file="file://$PROJECT_DIR$/pre_processing/preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="e#21#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/direction_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -204,13 +243,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processing/preprocessing.py">
+    <entry file="file://$PROJECT_DIR$/../msc_dissertation_notebooks/utils/direction_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state>
           <folding>
-            <element signature="e#21#31#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="108" column="6" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../msc_dissertation_notebooks/utils/analysis_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../msc_dissertation_notebooks/utils/temporal_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../msc_dissertation_notebooks/utils/spatial_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
         </state>
       </provider>
     </entry>

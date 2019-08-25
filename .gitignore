@@ -102,7 +102,14 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-analysis/analysis_results/
+analysis/analysis_r/.RData
+analysis/analysis_r/.Rhistory
+analysis/analysis_r/.Rproj.user/
+analysis/analysis_results/joined_model_data.shp
+analysis/analysis_results/joined_model_data.dbf
+analysis/analysis_results/joined_model_data.prj
+analysis/analysis_results/joined_model_data.cpg
+analysis/analysis_results/gdf_pur_images.npz
 app_route_data/
 ~$c_dissertation_plan.docx
 ~$c_disseration_methodology.docx

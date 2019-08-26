@@ -17,7 +17,6 @@ library(spdep)
 library(spatstat)
 
 envelope(cafe_pnts, fun= Kest, nsim= n, verbose=F)
-
 n <- 10
 sporeK <- envelope(cafe_pnts.ppp, fun= Kest, nsim= n, verbose=F)
 plot(sporeK)

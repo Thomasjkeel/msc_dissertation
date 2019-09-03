@@ -3,6 +3,7 @@ import numpy as np
 import shapely
 import windrose # use the WindroseAxes class for plotting windrose
 from matplotlib import cm
+import matplotlib.pyplot as plt
 
 def calc_magnitude(pnt1, pnt2):
     """
@@ -26,15 +27,14 @@ def calculate_initial_compass_bearing(pointA, pointB):
     The formulae used is the following:
         θ = atan2(sin(Δlong).cos(lat2),
                   cos(lat1).sin(lat2) − sin(lat1).cos(lat2).cos(Δlong))
-
-    :param:
+    :Parameters:
       - `pointA: The tuple representing the latitude/longitude for the
         first point. Latitude and longitude must be in decimal degrees
       - `pointB: The tuple representing the latitude/longitude for the
         second point. Latitude and longitude must be in decimal degrees
-    :returns:
+    :Returns:
       The bearing in degrees
-    :returns type:
+    :Returns Type:
       float
     """
     if (type(pointA) != tuple) or (type(pointB) != tuple):
@@ -187,7 +187,7 @@ def mean_direction(linestring, plot_windrose=False):
     if plot_windrose:
         ax = windrose.WindroseAxes.from_ax()
         max_mag = max(line_mag)
-        ax.bar(line_to_bearings,\
+        ax.contourf(line_to_bearings,\
             line_mag, bins=np.arange(0, max_mag, (max_mag/10)), cmap=cm.hot)
         ax.set_legend()
         ax.legend(loc=6, bbox_to_anchor=(1.0,0.2))
